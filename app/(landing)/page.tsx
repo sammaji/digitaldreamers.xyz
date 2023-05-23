@@ -21,7 +21,7 @@ export default function page() {
             </TypographyP>
             <Button>Get Started</Button>
           </div>
-          <div className="absolute top-[100%] left-[100%] translate-y-[-60%] translate-x-[-75%] bg-[#4535F8] h-[100vh] w-[100vh] blur-[24vh] rounded-[100%]"></div>
+          <div className="absolute top-[100%] left-[100%] translate-y-[-60%] translate-x-[-75%] bg-sec h-[100vh] w-[100vh] blur-[24vh] rounded-[100%]"></div>
           <div className="absolute bg-white top-[100%] left-[100%] translate-y-[-60%] translate-x-[-100%] h-[40vh] w-[40vh] blur-[16vh]"></div>
         </div>
       </div>
