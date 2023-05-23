@@ -1,7 +1,7 @@
 import Button from "@/components/Button";
 import { TypographyH1, TypographyP } from "@/components/Typography";
-import ImgWebsite from "@/components/assets/images/website.png";
-import ImgMobile from "@/components/assets/images/mobile.jpg";
+import ImgWebsite from "@/assets/images/website.png";
+import ImgMobile from "@/assets/images/mobile.jpg";
 import React from "react";
 
 export default function page() {
@@ -21,7 +21,7 @@ export default function page() {
             </TypographyP>
             <Button>Get Started</Button>
           </div>
-          <div className="absolute top-[100%] left-[100%] translate-y-[-60%] translate-x-[-75%] bg-blue-600 h-[100vh] w-[100vh] blur-[18vh] rounded-[100%]"></div>
+          <div className="absolute top-[100%] left-[100%] translate-y-[-60%] translate-x-[-75%] bg-[#4535F8] h-[100vh] w-[100vh] blur-[24vh] rounded-[100%]"></div>
           <div className="absolute bg-white top-[100%] left-[100%] translate-y-[-60%] translate-x-[-100%] h-[40vh] w-[40vh] blur-[16vh]"></div>
         </div>
       </div>
