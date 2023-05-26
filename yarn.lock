@@ -1601,9 +1601,9 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-lucide-react@^0.219.0:
-  version "0.219.0"
-  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.219.0.tgz#d09e3c91454918e35c6da31632f9cad4fa9628af"
+lucide-react@^0.221.0:
+  version "0.221.0"
+  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.221.0.tgz#557c2c78ea67c8c2b68e3e5821caf2d2dce8de9a"
 
 merge-stream@^2.0.0:
   version "2.0.0"
