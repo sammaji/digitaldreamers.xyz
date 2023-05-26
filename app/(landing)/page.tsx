@@ -18,13 +18,10 @@ export default function page() {
           </div>
           <div className="h-[100vh] w-[50vw] max-md:w-[75vw] max-sm:w-[100vw] flex flex-col px-16 justify-center">
             <TypographyH1>
-              Build Your Brand <br /> With Us
+              Digital Dreamers <br />
             </TypographyH1>
             <TypographyP className="pb-8">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic
-              dolorum inventore, maiores, voluptates magni ipsa quia nihil omnis
-              voluptatum doloribus veritatis rem harum expedita fugit quidem,
-              culpa cum sapiente quod.
+              We create your brand with extreme innovation and eye-catchy creativity. Our service ranges from Website Creation, Mobile App Development to Social Media Management, Content Creation and Business Strategy Analytics.
             </TypographyP>
             <Button>Get Started</Button>
           </div>
