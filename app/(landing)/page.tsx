@@ -18,7 +18,8 @@ export default function page() {
           </div>
           <div className="h-[100vh] w-[50vw] max-md:w-[75vw] max-sm:w-[100vw] flex flex-col px-16 justify-center">
             <TypographyH1>
-              Build Your Brand <br /> With Us
+              {/* Build Your Brand <br /> With Us */}
+              Digital Dreamers
             </TypographyH1>
             <TypographyP className="pb-8">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic
@@ -42,11 +43,15 @@ export default function page() {
         <div className="grid grid-cols-[2fr_1fr] max-sm:grid-cols-1 max-sm:grid-rows-[1fr_auto] h-fit gap-16 p-24">
           <div>
             <TypographyH1 className="text-black">Mobile Apps</TypographyH1>
-            <TypographyP className="text-black">
+            {/* <TypographyP className="text-black">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
               neque praesentium ex, temporibus est nihil officia? A quod
               doloribus debitis, voluptatem, veritatis eaque reprehenderit
               corrupti maxime ea tempore quam perferendis!
+            </TypographyP> */}
+
+            <TypographyP className="text-black">
+              We build native android applications or hybrid or desktop applications
             </TypographyP>
           </div>
 
@@ -73,7 +78,7 @@ export default function page() {
             maxime eveniet dolore optio facilis, voluptas, assumenda impedit.
           </TypographyP>
 
-          <img src={ImgWebsite.src} className="rounded-xl" />
+          <img src={ImgWebsite.src} className="rounded-xl" style={{border: "2px rgba(225,225,225, 0.24) solid"}} />
         </div>
       </div>
     </>
