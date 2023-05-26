@@ -1,10 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 body {
   background-color: black;
   color: white;
+}
+
+.mobile-img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 0px 32px rgba(119, 0, 213, 0.25));
 }
 
 ::-webkit-scrollbar {
@@ -12,11 +17,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #8b8b8b;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #5c5c5c;
 }
 
 ::-webkit-scrollbar-thumb:hover {
