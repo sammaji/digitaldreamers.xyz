@@ -1,15 +1,22 @@
 import Button from "@/components/Button";
 import { TypographyH1, TypographyP } from "@/components/Typography";
-import ImgWebsite from "@/assets/images/website.png";
-import ImgMobile from "@/assets/images/mobile.jpg";
-import React from "react";
+
+import ImgLanding from "@/assets/images/landing_2.png";
+import ImgWebsite from "@/assets/images/website_2.png";
+import ImgMobile from "@/assets/images/mobile_2.png";
+import BlueCircle from "@/components/BlueCircle";
 
 export default function page() {
   return (
     <>
+      {/* PAGE ONE */}
       <div className="h-[100vh] w-[100vw]">
-        <div className="absolute h-[100vh] w-[100vw] overflow-hidden">
-          <div className="h-[100vh] w-[50vw] flex flex-col px-16 justify-center">
+        <div className="absolute h-[100vh] w-[100vw] overflow-hidden grid grid-rows-1 grid-cols-2">
+          <div className="h-[56px] w-[100vw] flex items-center px-16 gap-8 col-span-2">
+            <a className="text-sm font-medium leading-none">Services</a>
+            <a className="text-sm font-medium leading-none">Contact</a>
+          </div>
+          <div className="h-[100vh] w-[50vw] max-md:w-[75vw] max-sm:w-[100vw] flex flex-col px-16 justify-center">
             <TypographyH1>
               Build Your Brand <br /> With Us
             </TypographyH1>
@@ -21,13 +28,18 @@ export default function page() {
             </TypographyP>
             <Button>Get Started</Button>
           </div>
-          <div className="absolute top-[100%] left-[100%] translate-y-[-60%] translate-x-[-75%] bg-sec h-[100vh] w-[100vh] blur-[24vh] rounded-[100%]"></div>
-          <div className="absolute bg-white top-[100%] left-[100%] translate-y-[-60%] translate-x-[-100%] h-[40vh] w-[40vh] blur-[16vh]"></div>
+
+          <div className="img-landing h-[100vh] w-[50vw] max-md:w-[75vw] max-sm:w-[100vw] flex flex-col justify-center">
+            <img src={ImgLanding.src} className=" max-sm:hidden"/>
+          </div>
+
+          <BlueCircle />
         </div>
       </div>
 
+      {/* PAGE TWO */}
       <div className="h-[100vh] w-[100vw] bg-white">
-        <div className="grid grid-cols-[2fr_1fr] h-[100vh] gap-16 p-24">
+        <div className="grid grid-cols-[2fr_1fr] max-sm:grid-cols-1 max-sm:grid-rows-[1fr_auto] h-fit gap-16 p-24">
           <div>
             <TypographyH1 className="text-black">Mobile Apps</TypographyH1>
             <TypographyP className="text-black">
@@ -39,11 +51,15 @@ export default function page() {
           </div>
 
           <div className="flex items-center justify-center">
-            <img src={ImgMobile.src} className="h-[400px] mobile-img" />
+            <img
+              src={ImgMobile.src}
+              className="h-[400px] mobile-img rounded-lg"
+            />
           </div>
         </div>
       </div>
 
+      {/* PAGE THREE */}
       <div className="min-h-[100vh] h-auto w-[100vw]">
         <div className="p-24">
           <TypographyH1>Websites</TypographyH1>
@@ -57,7 +73,7 @@ export default function page() {
             maxime eveniet dolore optio facilis, voluptas, assumenda impedit.
           </TypographyP>
 
-          <img src={ImgWebsite.src} />
+          <img src={ImgWebsite.src} className="rounded-xl" />
         </div>
       </div>
     </>
