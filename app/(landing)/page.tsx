@@ -5,12 +5,9 @@ import {
   TypographyP,
 } from "@/components/Typography";
 
-import ImgLanding from "@/assets/images/landing_2.png";
-import ImgWebsite from "@/assets/images/website_2.png";
-import ImgMobile from "@/assets/images/mobile_2.png";
+import ImgWebsite from "@/assets/images/website.png";
+import ImgMobile from "@/assets/images/mobile.png";
 import BlueCircle from "@/components/BlueCircle";
-
-import { MdCheck } from "react-icons/md";
 
 export default function page() {
   return (
@@ -19,8 +16,12 @@ export default function page() {
       <div className="h-[100vh] w-[100vw]">
         <div className="absolute h-[100vh] w-[100vw] overflow-hidden grid grid-rows-[56px_1fr] grid-cols-2 max-md:grid-cols-1 bg-image-2">
           <div className="h-[100%] w-[100%] flex items-center px-16 gap-8">
-            <a href="#" className="text-sm font-medium leading-none">Services</a>
-            <a href="#" className="text-sm font-medium leading-none">Contact</a>
+            <a href="#" className="text-sm font-medium leading-none">
+              Services
+            </a>
+            <a href="#" className="text-sm font-medium leading-none">
+              Contact
+            </a>
           </div>
           <div className="h-[100vh] w-[50vw] max-md:hidden flex flex-col row-span-2 justify-center bg-image">
             {/* <img src={ImgLanding.src} className=" max-sm:hidden" /> */}
