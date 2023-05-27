@@ -17,12 +17,16 @@ export default function page() {
     <>
       {/* PAGE ONE */}
       <div className="h-[100vh] w-[100vw]">
-        <div className="absolute h-[100vh] w-[100vw] overflow-hidden grid grid-rows-1 grid-cols-2">
-          <div className="h-[56px] w-[100vw] flex items-center px-16 gap-8 col-span-2">
-            <a className="text-sm font-medium leading-none">Services</a>
-            <a className="text-sm font-medium leading-none">Contact</a>
+        <div className="absolute h-[100vh] w-[100vw] overflow-hidden grid grid-rows-[56px_1fr] grid-cols-2 max-md:grid-cols-1 bg-image-2">
+          <div className="h-[100%] w-[100%] flex items-center px-16 gap-8">
+            <a href="#" className="text-sm font-medium leading-none">Services</a>
+            <a href="#" className="text-sm font-medium leading-none">Contact</a>
           </div>
-          <div className="h-[100vh] w-[50vw] max-md:w-[75vw] max-sm:w-[100vw] flex flex-col px-16 justify-center">
+          <div className="h-[100vh] w-[50vw] max-md:hidden flex flex-col row-span-2 justify-center bg-image">
+            {/* <img src={ImgLanding.src} className=" max-sm:hidden" /> */}
+          </div>
+
+          <div className="h-[100%] w-[100%] max-md:w-[75vw] max-sm:w-[100vw] flex flex-col px-16 justify-center">
             <TypographyH1>
               {/* Build Your Brand <br /> With Us */}
               Digital Dreamers
@@ -34,10 +38,6 @@ export default function page() {
               Business Strategy Analytics.
             </TypographyP>
             <Button>Get Started</Button>
-          </div>
-
-          <div className="img-landing h-[100vh] w-[50vw] max-md:w-[75vw] max-sm:w-[100vw] flex flex-col justify-center">
-            <img src={ImgLanding.src} className=" max-sm:hidden" />
           </div>
 
           <BlueCircle />
@@ -84,7 +84,7 @@ export default function page() {
           <div className="flex items-center justify-center">
             <img
               src={ImgMobile.src}
-              className="h-[400px] mobile-img rounded-lg"
+              className="h-[400px] mobile-img rounded-lg max-sm:hidden"
             />
           </div>
         </div>
