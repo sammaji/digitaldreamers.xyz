@@ -7,6 +7,17 @@ body {
   color: white;
 }
 
+.bg-image {
+  background-image: url("https://github-production-user-asset-6210df.s3.amazonaws.com/116789799/241368606-ba6bc538-3ec6-4b8a-a677-202995488c31.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230527%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230527T080653Z&X-Amz-Expires=300&X-Amz-Signature=45f0ca8fb7817bb39eddec85e95e5668e79f9b3bee8db91399411cad65163a8b&X-Amz-SignedHeaders=host&actor_id=116789799&key_id=0&repo_id=641641530");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-image-2 {
+  background-image: none;
+}
+
 .mobile-img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
     drop-shadow(0px 0px 32px rgba(119, 0, 213, 0.25));
@@ -26,4 +37,14 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-image-2 {
+    /* background-color: red; */
+    background-image: url("https://github-production-user-asset-6210df.s3.amazonaws.com/116789799/241368606-ba6bc538-3ec6-4b8a-a677-202995488c31.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230527%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230527T080653Z&X-Amz-Expires=300&X-Amz-Signature=45f0ca8fb7817bb39eddec85e95e5668e79f9b3bee8db91399411cad65163a8b&X-Amz-SignedHeaders=host&actor_id=116789799&key_id=0&repo_id=641641530");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
