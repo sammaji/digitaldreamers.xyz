@@ -1,10 +1,16 @@
 import Button from "@/components/Button";
-import { TypographyH1, TypographyP } from "@/components/Typography";
+import {
+  TypographyH1,
+  TypographyList,
+  TypographyP,
+} from "@/components/Typography";
 
 import ImgLanding from "@/assets/images/landing_2.png";
 import ImgWebsite from "@/assets/images/website_2.png";
 import ImgMobile from "@/assets/images/mobile_2.png";
 import BlueCircle from "@/components/BlueCircle";
+
+import { MdCheck } from "react-icons/md";
 
 export default function page() {
   return (
@@ -22,16 +28,16 @@ export default function page() {
               Digital Dreamers
             </TypographyH1>
             <TypographyP className="pb-8">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic
-              dolorum inventore, maiores, voluptates magni ipsa quia nihil omnis
-              voluptatum doloribus veritatis rem harum expedita fugit quidem,
-              culpa cum sapiente quod.
+              We create your brand with extreme innovation and eye-catchy
+              creativity. Our service ranges from Website Creation, Mobile App
+              Development to Social Media Management, Content Creation and
+              Business Strategy Analytics.
             </TypographyP>
             <Button>Get Started</Button>
           </div>
 
           <div className="img-landing h-[100vh] w-[50vw] max-md:w-[75vw] max-sm:w-[100vw] flex flex-col justify-center">
-            <img src={ImgLanding.src} className=" max-sm:hidden"/>
+            <img src={ImgLanding.src} className=" max-sm:hidden" />
           </div>
 
           <BlueCircle />
@@ -51,8 +57,28 @@ export default function page() {
             </TypographyP> */}
 
             <TypographyP className="text-black">
-              We build native android applications or hybrid or desktop applications
+              Unlock the full potential of mobile technology with our
+              cutting-edge mobile development solutions. Whether you need a
+              sleek <b>Android app</b> or a powerful <b>Hybrid solution</b>, we
+              blend innovation, functionality, and seamless design to create
+              mobile experiences that leave a lasting impression.
             </TypographyP>
+
+            {/* <TypographyLead/> */}
+            {/* <div>
+              <MdCheck color="#03C04A"/><TypographyP className="text-black">Native Android Applications</TypographyP>
+              <MdCheck color="#03C04A"/><TypographyP className="text-black">{`Hybrid Applications (Android + iOS)`}</TypographyP>
+              <MdCheck color="#03C04A"/><TypographyP className="text-black">Desktop Applications</TypographyP>
+            </div> */}
+
+            <TypographyList
+              className="text-black"
+              data={[
+                "Native Android Applications",
+                "Hybrid Applications (Android + iOS)",
+                "Desktop Applications",
+              ]}
+            />
           </div>
 
           <div className="flex items-center justify-center">
@@ -69,16 +95,19 @@ export default function page() {
         <div className="p-24">
           <TypographyH1>Websites</TypographyH1>
           <TypographyP className="pb-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            fugit officiis cumque, doloremque repellendus nostrum! Impedit velit
-            exercitationem, beatae debitis quae inventore at in voluptates neque
-            accusantium consequuntur ab numquam. Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Suscipit accusantium dignissimos eum
-            ratione illum laudantium odit corrupti, ex ducimus fuga vel iste
-            maxime eveniet dolore optio facilis, voluptas, assumenda impedit.
+            We blend creativity, functionality, and user-centric design to
+            deliver stunning websites that elevate your brand. From intuitive
+            user interfaces to seamless e-commerce integration, our expert team
+            creates immersive online experiences that captivate audiences and
+            drive tangible results. Partner with us to unlock your online
+            potential and leave a lasting impression in the digital realm.
           </TypographyP>
 
-          <img src={ImgWebsite.src} className="rounded-xl" style={{border: "2px rgba(225,225,225, 0.24) solid"}} />
+          <img
+            src={ImgWebsite.src}
+            className="rounded-xl"
+            style={{ border: "2px rgba(225,225,225, 0.24) solid" }}
+          />
         </div>
       </div>
     </>
