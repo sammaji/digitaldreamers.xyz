@@ -1,3 +1,9 @@
+"use client";
+import dynamic from "next/dynamic";
+const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+  ssr: false,
+});
+
 import Button from "@/components/Button";
 import {
   TypographyH1,
@@ -13,6 +19,20 @@ import Image from "next/image";
 export default function page() {
   return (
     <>
+      <AnimatedCursor
+        innerSize={16}
+        innerScale={0}
+        innerStyle={{
+          backgroundColor: "#fff",
+          mixBlendMode: "exclusion",
+        }}
+        outerStyle={{
+          backgroundColor: "#fff",
+          mixBlendMode: "exclusion",
+        }}
+        trailingSpeed={16}
+        clickables={["a", "button", "div.bg-image", "h1", "img"]}
+      />
       {/* PAGE ONE */}
       <div className="h-[100vh] w-[100vw]" id="page-one">
         <div className="absolute h-[100vh] w-[100vw] overflow-hidden grid grid-rows-[56px_1fr] grid-cols-2 max-md:grid-cols-1">
@@ -41,7 +61,7 @@ export default function page() {
             </TypographyP>
             <Button>Get Started</Button>
           </div>
-          <BlueCircle/>
+          <BlueCircle />
         </div>
       </div>
 

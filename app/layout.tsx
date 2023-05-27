@@ -1,11 +1,5 @@
-"use client";
-import dynamic from "next/dynamic";
 import "./globals.css";
 import { Inter } from "next/font/google";
-
-const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
-  ssr: false,
-});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,20 +16,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} overflow-x-hidden`}>
-        <AnimatedCursor
-          innerSize={16}
-          innerScale={0}
-          innerStyle={{
-            backgroundColor: "#fff",
-            mixBlendMode: "exclusion",
-          }}
-          outerStyle={{
-            backgroundColor: "#fff",
-            mixBlendMode: "exclusion",
-          }}
-          trailingSpeed={16}
-          clickables={["a", "button", "div.bg-image", "h1", "img"]}
-        />
         {children}
       </body>
     </html>
