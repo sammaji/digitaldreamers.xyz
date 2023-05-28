@@ -51,13 +51,13 @@ export default function page() {
           <div className="h-[100%] w-[100%] max-md:w-[75vw] max-sm:w-[100vw] flex flex-col px-16 max-sm:px-8 max-sm:py-16 justify-center z-10">
             <TypographyH1>
               {/* Build Your Brand <br /> With Us */}
-              Digital Dreamers
+              Lorem Ipsum
             </TypographyH1>
             <TypographyP className="pb-8">
-              We create your brand with extreme innovation and eye-catchy
-              creativity. Our service ranges from Website Creation, Mobile App
-              Development to Social Media Management, Content Creation and
-              Business Strategy Analytics.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
             </TypographyP>
             <Button>Get Started</Button>
           </div>
@@ -78,11 +78,10 @@ export default function page() {
             </TypographyP> */}
 
             <TypographyP className="text-black">
-              Unlock the full potential of mobile technology with our
-              cutting-edge mobile development solutions. Whether you need a
-              sleek <b>Android app</b> or a powerful <b>Hybrid solution</b>, we
-              blend innovation, functionality, and seamless design to create
-              mobile experiences that leave a lasting impression.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+              nisi ut aliquip ex ea commodo consequat.
             </TypographyP>
 
             {/* <TypographyLead/> */}
@@ -123,12 +122,10 @@ export default function page() {
         <div className="p-24 max-sm:px-8 max-sm:py-16">
           <TypographyH1>Websites</TypographyH1>
           <TypographyP className="pb-8">
-            We blend creativity, functionality, and user-centric design to
-            deliver stunning websites that elevate your brand. From intuitive
-            user interfaces to seamless e-commerce integration, our expert team
-            creates immersive online experiences that captivate audiences and
-            drive tangible results. Partner with us to unlock your online
-            potential and leave a lasting impression in the digital realm.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat.
           </TypographyP>
 
           <img
