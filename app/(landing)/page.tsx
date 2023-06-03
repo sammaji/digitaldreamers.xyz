@@ -1,8 +1,5 @@
 import {
   TypographyH1,
-  TypographyH2,
-  TypographyH3,
-  TypographyH4,
   TypographyList,
   TypographyP,
 } from "@/components/Typography";
