@@ -1,12 +1,8 @@
-"use client";
-import dynamic from "next/dynamic";
-const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
-  ssr: false,
-});
-
-import Button from "@/components/Button";
 import {
   TypographyH1,
+  TypographyH2,
+  TypographyH3,
+  TypographyH4,
   TypographyList,
   TypographyP,
 } from "@/components/Typography";
@@ -15,25 +11,13 @@ import ImgWebsite from "@/assets/images/website.png";
 import ImgMobile from "@/assets/images/mobile.png";
 import BlueCircle from "@/components/BlueCircle";
 import Image from "next/image";
+import Dialog from "@/components/Dialog";
+import Cursor from "@/components/Cursor";
 
 export default function page() {
   return (
     <>
-      <AnimatedCursor
-        innerSize={16}
-        innerScale={0}
-        innerStyle={{
-          backgroundColor: "#fff",
-          mixBlendMode: "exclusion",
-        }}
-        outerStyle={{
-          backgroundColor: "#fff",
-          mixBlendMode: "exclusion",
-        }}
-        trailingSpeed={16}
-        clickables={["a", "button", "div.bg-image", "h1", "img"]}
-      />
-      {/* PAGE ONE */}
+      <Cursor />
       <div className="h-[100vh] w-[100vw]" id="page-one">
         <div className="absolute h-[100vh] w-[100vw] overflow-hidden grid grid-rows-[56px_1fr] grid-cols-2 max-md:grid-cols-1">
           <div className="absolute h-[100vh] w-[100vw] bg-image-2 opacity-20"></div>
@@ -41,25 +25,23 @@ export default function page() {
             <a href="#page-two" className="text-sm font-medium leading-none">
               Services
             </a>
-            <a href="#" className="text-sm font-medium leading-none">
+            <a
+              href="mailto:samyabratamaji334@gmail.com/?subject=Query"
+              className="text-sm font-medium leading-none"
+            >
               Contact
             </a>
           </div>
-          <div className="h-[100vh] w-[50vw] max-md:hidden flex flex-col row-span-2 justify-center bg-image">
-            {/* <img src={ImgLanding.src} className=" max-sm:hidden" /> */}
-          </div>
+          <div className="h-[100vh] w-[50vw] max-md:hidden flex flex-col row-span-2 justify-center bg-image"></div>
           <div className="h-[100%] w-[100%] max-md:w-[75vw] max-sm:w-[100vw] flex flex-col px-16 max-sm:px-8 max-sm:py-16 justify-center z-10">
-            <TypographyH1>
-              {/* Build Your Brand <br /> With Us */}
-              Digital Dreamers
-            </TypographyH1>
+            <TypographyH1>Digital Dreamers</TypographyH1>
             <TypographyP className="pb-8">
               We create your brand with extreme innovation and eye-catchy
               creativity. Our service ranges from Website Creation, Mobile App
               Development to Social Media Management, Content Creation and
               Business Strategy Analytics.
             </TypographyP>
-            <Button>Get Started</Button>
+            <Dialog />
           </div>
           <BlueCircle />
         </div>
@@ -70,13 +52,6 @@ export default function page() {
         <div className="grid grid-cols-[2fr_1fr] max-sm:grid-cols-1 max-sm:grid-rows-[1fr_auto] h-fit gap-8 p-24 max-sm:px-8 max-sm:py-16">
           <div>
             <TypographyH1 className="text-black">Mobile Apps</TypographyH1>
-            {/* <TypographyP className="text-black">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
-              neque praesentium ex, temporibus est nihil officia? A quod
-              doloribus debitis, voluptatem, veritatis eaque reprehenderit
-              corrupti maxime ea tempore quam perferendis!
-            </TypographyP> */}
-
             <TypographyP className="text-black">
               Unlock the full potential of mobile technology with our
               cutting-edge mobile development solutions. Whether you need a
@@ -84,13 +59,6 @@ export default function page() {
               blend innovation, functionality, and seamless design to create
               mobile experiences that leave a lasting impression.
             </TypographyP>
-
-            {/* <TypographyLead/> */}
-            {/* <div>
-              <MdCheck color="#03C04A"/><TypographyP className="text-black">Native Android Applications</TypographyP>
-              <MdCheck color="#03C04A"/><TypographyP className="text-black">{`Hybrid Applications (Android + iOS)`}</TypographyP>
-              <MdCheck color="#03C04A"/><TypographyP className="text-black">Desktop Applications</TypographyP>
-            </div> */}
 
             <TypographyList
               className="text-black"
@@ -103,11 +71,6 @@ export default function page() {
           </div>
 
           <div className="flex items-center justify-center">
-            {/* <img
-              src={ImgMobile.src}
-              className="h-[400px] mobile-img rounded-lg max-sm:hidden"
-            /> */}
-
             <Image
               alt="ui design of mobile stock trading application"
               src={ImgMobile.src}
@@ -131,13 +94,36 @@ export default function page() {
             potential and leave a lasting impression in the digital realm.
           </TypographyP>
 
-          <img
+          <Image
+            alt="ui design of chat-gpt inspired ai chatbot interface"
             src={ImgWebsite.src}
-            className="rounded-xl"
-            style={{ border: "2px rgba(225,225,225, 0.24) solid" }}
+            width={ImgWebsite.width}
+            height={ImgWebsite.height}
           />
         </div>
       </div>
+
+      {/* <div className="h-[60vh] w-[100vw] bg-slate-900">
+        <div className="p-24 max-sm:px-8 max-sm:py-16 grid grid-cols-4 gap-16">
+          <div>
+            <TypographyH2>Digital Dreamers</TypographyH2>
+            <TypographyP>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut,
+              laboriosam maxime?
+            </TypographyP>
+          </div>
+          <div>
+            <TypographyH3>Services</TypographyH3>
+            <ul>
+              <li>Websites</li>
+              <li>Mobile Apps</li>
+              <li>Custom Software</li>
+              <li>Technical Writing</li>
+              <li>Copywriting</li>
+            </ul>
+          </div>
+        </div>
+      </div> */}
     </>
   );
 }

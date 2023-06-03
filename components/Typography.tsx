@@ -1,6 +1,11 @@
 import React, { ReactNode } from "react";
 import { MdCheck } from "react-icons/md";
 
+export interface TypographyProps {
+  children: ReactNode;
+  className?: string;
+}
+
 export function TypographyH1({
   children,
   className,
@@ -17,26 +22,26 @@ export function TypographyH1({
   );
 }
 
-export function TypographyH2() {
+export function TypographyH2({ children }: TypographyProps) {
   return (
     <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
-      The People of the Kingdom
+      {children}
     </h2>
   );
 }
 
-export function TypographyH3() {
+export function TypographyH3({ children }: TypographyProps) {
   return (
     <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
-      The Joke Tax
+      {children}
     </h3>
   );
 }
 
-export function TypographyH4() {
+export function TypographyH4({ children }: TypographyProps) {
   return (
     <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
-      People stopped telling jokes
+      {children}
     </h4>
   );
 }

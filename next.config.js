@@ -6,6 +6,11 @@ const nextConfig = {
           hostname: "github-production-user-asset-*.s3.amazonaws.com",
           port: "",
           pathname: "*/**",
+        }, {
+          protocol: "https",
+          hostname: "picsum.photos",
+          port: "",
+          pathname: "*/**"
         }],
       },
 }
