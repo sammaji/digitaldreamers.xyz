@@ -1,4 +1,4 @@
-const ContentSecurityPolicy = `enforce 'strict'; script-src 'self'; object-src 'self'; style-src 'self'; font-src 'self'; base-uri 'self';`;
+const ContentSecurityPolicy = `default-src https: 'unsafe-eval' 'unsafe-inline'; script-src 'self'; object-src 'none'; style-src 'self'; font-src 'self'; base-uri 'self'; require-trusted-types-for 'script';`;
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
