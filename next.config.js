@@ -1,11 +1,4 @@
-const ContentSecurityPolicy = `
-  enforce 'strict';
-  script-src 'self';
-  object-src 'self';
-  style-src 'self';
-  font-src 'self';
-  base-uri 'self';
-  `;
+const ContentSecurityPolicy = `enforce 'strict'; script-src 'self'; object-src 'self'; style-src 'self'; font-src 'self'; base-uri 'self';`;
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -36,7 +29,7 @@ const nextConfig = {
           },
           {
             key: "Content-Security-Policy",
-            value: ContentSecurityPolicy.replace(/\s{2,}/g).trim(),
+            value: ContentSecurityPolicy,
           },
         ],
       },
