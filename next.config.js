@@ -1,24 +1,4 @@
-const ContentSecurityPolicy = `default-src https: 'unsafe-eval' 'unsafe-inline'; script-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline'; font-src 'self'; base-uri 'self'; require-trusted-types-for 'script';`;
-
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: [
-          {
-            key: 'X-XSS-Protection',
-            value: '1; mode=block'
-          },
-          {
-            key: "Content-Security-Policy",
-            value: ContentSecurityPolicy,
-          },
-        ],
-      },
-    ];
-  },
-};
+const nextConfig = {};
 
 module.exports = nextConfig;
