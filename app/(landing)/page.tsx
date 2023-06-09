@@ -33,10 +33,9 @@ export default function page() {
           <div className="h-[100%] w-[100%] max-md:w-[75vw] max-sm:w-[100vw] flex flex-col px-16 max-sm:px-8 max-sm:py-16 justify-center z-10">
             <TypographyH1>Digital Dreamers</TypographyH1>
             <TypographyP className="pb-8">
-              We create your brand with extreme innovation and eye-catchy
-              creativity. Our service ranges from Website Creation, Mobile App
-              Development to Social Media Management, Content Creation and
-              Business Strategy Analytics.
+              We are dedicated to helping businesses succeed in the digital
+              world. Our team of experts specializes in web development, mobile
+              development, copywriting, and social media marketing.
             </TypographyP>
             <Dialog />
           </div>
