@@ -4,8 +4,8 @@ import {
   TypographyP,
 } from "@/components/Typography";
 
-import ImgWebsite from "@/assets/images/website.png";
-import ImgMobile from "@/assets/images/mobile.png";
+import ImgWebsite from "@/assets/images/website.webp";
+import ImgMobile from "@/assets/images/mobile.webp";
 import BlueCircle from "@/components/BlueCircle";
 import Image from "next/image";
 import Dialog from "@/components/Dialog";

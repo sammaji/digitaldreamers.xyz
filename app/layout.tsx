@@ -1,6 +1,5 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import OgImage from "@/public/logo_digital_dreamers.png";
 import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,16 +21,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
+        <link rel="icon" href="/favicon.ico" />
         <meta
           property="og:image"
-          content="https://github-production-user-asset-6210df.s3.amazonaws.com/116789799/244854298-ad63829a-226e-4c6a-825a-2c9fefc2adfd.png"
+          content="https://www.digitaldreamers.xyz/logo_digital_dreamers.png"
         />
         <meta property="og:image:width" content="500" />
         <meta property="og:image:height" content="500" />
-        <meta
-          property="og:image:alt"
-          content="Logo for digital dreamers"
-        />
+        <meta property="og:image:alt" content="Logo for digital dreamers" />
       </Head>
       <body className={`${inter.className} overflow-x-hidden scroll-smooth`}>
         {children}
