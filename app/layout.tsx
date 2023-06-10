@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import OgImage from "@/assets/images/logo_digital_dreamers.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,6 +11,9 @@ export const metadata = {
     "Transform your digital presence with our expert website development and digital marketing solutions. We specialize in helping businesses elevate their online visibility and drive success in today's competitive landscape.",
   keywords:
     "website, digital marketing, ui ux, electron applications, desktop application, mobile app, software",
+  image: OgImage.src,
+  ["image:height"]: "500px",
+  ["image:width"]: "500px",
 };
 
 export default function RootLayout({
