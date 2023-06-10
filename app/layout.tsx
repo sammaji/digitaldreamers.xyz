@@ -26,6 +26,12 @@ export default function RootLayout({
           property="og:image"
           content="https://github-production-user-asset-6210df.s3.amazonaws.com/116789799/244854298-ad63829a-226e-4c6a-825a-2c9fefc2adfd.png"
         />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="500" />
+        <meta
+          property="og:image:alt"
+          content="Logo for digital dreamers"
+        />
       </Head>
       <body className={`${inter.className} overflow-x-hidden scroll-smooth`}>
         {children}
