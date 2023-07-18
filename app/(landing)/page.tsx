@@ -1,5 +1,7 @@
 import {
   TypographyH1,
+  TypographyH2,
+  TypographyH3,
   TypographyList,
   TypographyP,
 } from "@/components/Typography";
@@ -10,6 +12,7 @@ import BlueCircle from "@/components/BlueCircle";
 import Image from "next/image";
 import Dialog from "@/components/Dialog";
 import Cursor from "@/components/Cursor";
+import OgImage from "@/public/logo_digital_dreamers.png";
 
 export default function page() {
   return (
@@ -99,19 +102,34 @@ export default function page() {
         </div>
       </div>
 
-      {/* <div className="h-[60vh] w-[100vw] bg-slate-900">
+      <div className="min-h-[60vh] h-[100%] w-[100vw] bg-slate-900">
         <div className="p-24 max-sm:px-8 max-sm:py-16 grid grid-cols-4 gap-16">
           <div>
-            <TypographyH2>Digital Dreamers</TypographyH2>
-            <TypographyP>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut,
-              laboriosam maxime?
-            </TypographyP>
+            <Image
+              src={OgImage.src}
+              height={500}
+              width={500}
+              alt="logo of digital dreamers agency with text"
+            ></Image>
           </div>
           <div>
+            <TypographyH2>Digital Dreamers</TypographyH2>
+            <TypographyP>Build your digital presence with us.</TypographyP>
+          </div>
+          <div className="flex flex-col gap-4">
             <TypographyH3>Services</TypographyH3>
-            <ul>
+            <ul className="flex flex-col gap-2">
               <li>Websites</li>
+              <li>Mobile Apps</li>
+              <li>Digital Marketing</li>
+              <li>Copywriting</li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <TypographyH3>Contact Us</TypographyH3>
+            <ul className="flex flex-col gap-2">
+              <li>Support</li>
               <li>Mobile Apps</li>
               <li>Custom Software</li>
               <li>Technical Writing</li>
@@ -119,7 +137,7 @@ export default function page() {
             </ul>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
