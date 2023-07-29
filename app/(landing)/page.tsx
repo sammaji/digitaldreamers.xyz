@@ -103,7 +103,7 @@ export default function page() {
       </div>
 
       <div className="min-h-[60vh] h-[100%] w-[100vw] bg-slate-900">
-        <div className="p-24 max-sm:px-8 max-sm:py-16 grid grid-cols-4 gap-16">
+        <div className="md:p-24 max-sm:px-8 max-sm:py-16 md:grid md:grid-cols-4 md:gap-16 flex flex-col items-center gap-8 text-center">
           <div>
             <Image
               src={OgImage.src}
